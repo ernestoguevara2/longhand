@@ -13,4 +13,4 @@
 
 The Hugging Face dataset viewer failed often during this work. Only RAID's abstracts domain could be sampled for unattacked text, which limits how well that part of the data represents RAID.
 
-Results are committed: `humanizer-eval.json`, `humanizer-summary.json`, and `detector-eval.json`.
+Results are committed: `detector-eval.json` and `humanizer-eval.json`. The humanizer run writes `humanizer-summary.json` when it finishes; the committed rows are from a partial run, summarised in [docs/EVALUATION.md](../docs/EVALUATION.md).
