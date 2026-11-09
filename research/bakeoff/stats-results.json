@@ -1,0 +1,50 @@
+{
+ "ai_raid_paraphrased": {
+  "burstinessCV": 0.16,
+  "sentenceLen": 0.73,
+  "aiVocabPer100": 0.46,
+  "structuralPer100": 0.47,
+  "emDashPer100": 0.47,
+  "typeTokenRatio": 0.47
+ },
+ "ai_gpt3_essay": {
+  "burstinessCV": 0.16,
+  "sentenceLen": 0.45,
+  "aiVocabPer100": 0.61,
+  "structuralPer100": 0.64,
+  "emDashPer100": 0.44,
+  "typeTokenRatio": 0.63
+ },
+ "ai_gpt3_abstract": {
+  "burstinessCV": 0.04,
+  "sentenceLen": 0.65,
+  "aiVocabPer100": 0.77,
+  "structuralPer100": 0.41,
+  "emDashPer100": 0.44,
+  "typeTokenRatio": 0.83
+ },
+ "ai_gpt3_prompted_literary": {
+  "burstinessCV": 0.05,
+  "sentenceLen": 0.68,
+  "aiVocabPer100": 0.9,
+  "structuralPer100": 0.41,
+  "emDashPer100": 0.44,
+  "typeTokenRatio": 0.9
+ },
+ "ai_gemma_2026": {
+  "burstinessCV": 0.35,
+  "sentenceLen": 0.4,
+  "aiVocabPer100": 0.75,
+  "structuralPer100": 0.55,
+  "emDashPer100": 0.75,
+  "typeTokenRatio": 0.94
+ },
+ "human_toefl": {
+  "burstinessCV": 0.33,
+  "sentenceLen": 0.43,
+  "aiVocabPer100": 0.43,
+  "structuralPer100": 0.42,
+  "emDashPer100": 0.46,
+  "typeTokenRatio": 0.88
+ }
+}

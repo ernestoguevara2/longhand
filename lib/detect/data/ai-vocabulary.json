@@ -1,0 +1,21 @@
+{
+  "version": "2026-11",
+  "source": "Wikipedia:Signs of AI writing (AI vocabulary section), blader/humanizer v3.1.0",
+  "eras": {
+    "2023-mid2024": ["additionally", "boasts", "bolstered", "crucial", "delve", "delves", "delving", "emphasizing", "enduring", "garner", "garnered", "garnering", "intricate", "intricacies", "interplay", "meticulous", "meticulously", "pivotal", "tapestry", "testament", "valuable", "vibrant"],
+    "mid2024-mid2025": ["bolstered", "crucial", "emphasizing", "enhance", "enhances", "enhancing", "enduring", "fostering", "highlighting", "pivotal", "showcasing", "vibrant"],
+    "mid2025-mid2026": ["emphasizing", "enhance", "enhances", "enhancing", "highlighting", "showcasing"],
+    "mid2026-on": ["dependable", "foster", "fosters", "leverage", "leverages", "leveraging", "multifaceted", "prioritize", "prioritizes", "quietly", "universally"]
+  },
+  "contextual": [
+    { "id": "align-with", "pattern": "\\balign(?:s|ed|ing)? with\\b" },
+    { "id": "deep-dive", "pattern": "\\bdeep dive\\b" },
+    { "id": "key-adjective", "pattern": "\\bkey (?:factor|role|element|aspect|component|insight|takeaway|driver|feature|challenge|benefit|point|part)s?\\b" },
+    { "id": "landscape-abstract", "pattern": "\\b(?:evolving|changing|shifting|competitive|digital|political|cultural|media|modern|business|technological|regulatory|culinary|educational|economic|current|dynamic|complex) landscapes?\\b" },
+    { "id": "tapestry-abstract", "pattern": "\\b(?:rich|vibrant|intricate|complex|diverse|cultural) tapestry\\b|\\btapestry of\\b" },
+    { "id": "underscore-verb", "pattern": "\\bunderscor(?:e|es|ed|ing) (?:the|how|that|its|their|a|an|this)\\b" },
+    { "id": "highlight-verb", "pattern": "\\bhighlights? (?:the|how|that|its|their|a|an|this)\\b" },
+    { "id": "showcase-verb", "pattern": "\\bshowcases? (?:the|how|that|its|their|a|an|this)\\b" },
+    { "id": "robust-figurative", "pattern": "\\brobust (?:framework|approach|solution|ecosystem|strategy|community|system of|culture|foundation)\\b" }
+  ]
+}

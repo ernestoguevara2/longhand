@@ -1,0 +1,175 @@
+{
+  "summary": {
+    "testSamples": 118,
+    "auroc": {
+      "raw": 0.969,
+      "deep": 0.983,
+      "quick": 0.934
+    },
+    "fprExcludingAbstracts": {
+      "rawAt50": 35.5,
+      "deepLikelyAi": 8.1
+    },
+    "truePositiveRate": {
+      "rawAt50": 100,
+      "deepLikelyAi": 97.8,
+      "deepNotLikelyHuman": 100
+    }
+  },
+  "aucPerAiBucket": {
+    "ai_raid_paraphrased": {
+      "raw": 0.967,
+      "deep": 0.948,
+      "quick": 0.929
+    },
+    "ai_raid": {
+      "raw": 1,
+      "deep": 1,
+      "quick": 1
+    },
+    "ai_gpt3_essay": {
+      "raw": 1,
+      "deep": 0.981,
+      "quick": 0.874
+    },
+    "ai_gpt3_abstract": {
+      "raw": 0.999,
+      "deep": 0.993,
+      "quick": 0.965
+    },
+    "ai_gpt3_prompted_literary": {
+      "raw": 0.96,
+      "deep": 0.984,
+      "quick": 0.911
+    },
+    "ai_fresh_gemma4:e4b": {
+      "raw": 0.921,
+      "deep": 0.98,
+      "quick": 0.901
+    },
+    "ai_fresh_gemma4:26b": {
+      "raw": 1,
+      "deep": 0.981,
+      "quick": 0.972
+    }
+  },
+  "perBucket": [
+    {
+      "bucket": "ai_fresh_gemma4:26b",
+      "n": 2,
+      "rawFlaggedAt50": 100,
+      "deepLikelyAi": 100,
+      "deepUnclear": 0,
+      "deepLikelyHuman": 0,
+      "quickLikelyAi": 50
+    },
+    {
+      "bucket": "ai_fresh_gemma4:e4b",
+      "n": 12,
+      "rawFlaggedAt50": 100,
+      "deepLikelyAi": 91.7,
+      "deepUnclear": 8.3,
+      "deepLikelyHuman": 0,
+      "quickLikelyAi": 75
+    },
+    {
+      "bucket": "ai_gpt3_abstract",
+      "n": 13,
+      "rawFlaggedAt50": 100,
+      "deepLikelyAi": 100,
+      "deepUnclear": 0,
+      "deepLikelyHuman": 0,
+      "quickLikelyAi": 76.9
+    },
+    {
+      "bucket": "ai_gpt3_essay",
+      "n": 3,
+      "rawFlaggedAt50": 100,
+      "deepLikelyAi": 100,
+      "deepUnclear": 0,
+      "deepLikelyHuman": 0,
+      "quickLikelyAi": 33.3
+    },
+    {
+      "bucket": "ai_gpt3_prompted_literary",
+      "n": 7,
+      "rawFlaggedAt50": 100,
+      "deepLikelyAi": 100,
+      "deepUnclear": 0,
+      "deepLikelyHuman": 0,
+      "quickLikelyAi": 71.4
+    },
+    {
+      "bucket": "ai_raid",
+      "n": 4,
+      "rawFlaggedAt50": 100,
+      "deepLikelyAi": 100,
+      "deepUnclear": 0,
+      "deepLikelyHuman": 0,
+      "quickLikelyAi": 100
+    },
+    {
+      "bucket": "ai_raid_paraphrased",
+      "n": 4,
+      "rawFlaggedAt50": 100,
+      "deepLikelyAi": 100,
+      "deepUnclear": 0,
+      "deepLikelyHuman": 0,
+      "quickLikelyAi": 25
+    },
+    {
+      "bucket": "human_college_essay",
+      "n": 13,
+      "rawFlaggedAt50": 38.5,
+      "deepLikelyAi": 0,
+      "deepUnclear": 15.4,
+      "deepLikelyHuman": 84.6,
+      "quickLikelyAi": 0
+    },
+    {
+      "bucket": "human_cs224n_abstract",
+      "n": 11,
+      "rawFlaggedAt50": 100,
+      "deepLikelyAi": 54.5,
+      "deepUnclear": 36.4,
+      "deepLikelyHuman": 9.1,
+      "quickLikelyAi": 18.2
+    },
+    {
+      "bucket": "human_hc3",
+      "n": 4,
+      "rawFlaggedAt50": 0,
+      "deepLikelyAi": 0,
+      "deepUnclear": 0,
+      "deepLikelyHuman": 100,
+      "quickLikelyAi": 0
+    },
+    {
+      "bucket": "human_raid",
+      "n": 3,
+      "rawFlaggedAt50": 0,
+      "deepLikelyAi": 0,
+      "deepUnclear": 0,
+      "deepLikelyHuman": 100,
+      "quickLikelyAi": 0
+    },
+    {
+      "bucket": "human_toefl",
+      "n": 20,
+      "rawFlaggedAt50": 80,
+      "deepLikelyAi": 25,
+      "deepUnclear": 30,
+      "deepLikelyHuman": 45,
+      "quickLikelyAi": 10
+    },
+    {
+      "bucket": "human_us_8th_grade",
+      "n": 22,
+      "rawFlaggedAt50": 4.5,
+      "deepLikelyAi": 0,
+      "deepUnclear": 0,
+      "deepLikelyHuman": 100,
+      "quickLikelyAi": 0
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "version": "fit-2026-11-09",
+  "deep": {
+    "intercept": 0.59577,
+    "weights": {
+      "classifierLogit": 2.9757,
+      "vocabularyPer100": 0.92027,
+      "dashesPer100": 0.52614,
+      "strongTellsPer100": 0.41531
+    },
+    "mean": {
+      "classifierLogit": 3.60106,
+      "vocabularyPer100": 0.29219,
+      "dashesPer100": 0.1112,
+      "strongTellsPer100": 0.09154
+    },
+    "std": {
+      "classifierLogit": 6.1651,
+      "vocabularyPer100": 0.53688,
+      "dashesPer100": 0.30992,
+      "strongTellsPer100": 0.25619
+    },
+    "thresholds": {
+      "likelyAi": 0.7,
+      "likelyHuman": 0.3
+    }
+  },
+  "quick": {
+    "intercept": 0.3141,
+    "weights": {
+      "rhythmUniformity": 1.52552,
+      "vocabularyPer100": 1.19835,
+      "strongTellsPer100": 0.62718,
+      "dashesPer100": 0.86512
+    },
+    "mean": {
+      "rhythmUniformity": 0.61288,
+      "vocabularyPer100": 0.29219,
+      "strongTellsPer100": 0.09154,
+      "dashesPer100": 0.1112
+    },
+    "std": {
+      "rhythmUniformity": 0.16838,
+      "vocabularyPer100": 0.53688,
+      "strongTellsPer100": 0.25619,
+      "dashesPer100": 0.30992
+    },
+    "thresholds": {
+      "likelyAi": 0.7,
+      "likelyHuman": 0.3
+    }
+  },
+  "training": {
+    "samples": 479,
+    "targetFpr": 0.06,
+    "selection": {
+      "deep": [
+        {
+          "feature": "strongTellsPer100",
+          "auroc": 0.9885736800630418,
+          "toeflFpr": 0.29411764705882354,
+          "accepted": false
+        },
+        {
+          "feature": "weakTellsPer100",
+          "auroc": 0.9881796690307328,
+          "toeflFpr": 0.29411764705882354,
+          "accepted": false
+        },
+        {
+          "feature": "vocabularyPer100",
+          "auroc": 0.9921197793538219,
+          "toeflFpr": 0.29411764705882354,
+          "accepted": true
+        },
+        {
+          "feature": "dashesPer100",
+          "auroc": 0.9901497241922774,
+          "toeflFpr": 0.35294117647058826,
+          "accepted": false
+        },
+        {
+          "feature": "rhythmUniformity",
+          "auroc": 0.9842395587076438,
+          "toeflFpr": 0.35294117647058826,
+          "accepted": false
+        },
+        {
+          "feature": "repeatedOpeningRate",
+          "auroc": 0.9881796690307328,
+          "toeflFpr": 0.29411764705882354,
+          "accepted": false
+        },
+        {
+          "feature": "strongTellsPer100",
+          "auroc": 0.9929078014184397,
+          "toeflFpr": 0.29411764705882354,
+          "accepted": false
+        },
+        {
+          "feature": "weakTellsPer100",
+          "auroc": 0.991725768321513,
+          "toeflFpr": 0.29411764705882354,
+          "accepted": false
+        },
+        {
+          "feature": "dashesPer100",
+          "auroc": 0.9940898345153665,
+          "toeflFpr": 0.17647058823529413,
+          "accepted": true
+        },
+        {
+          "feature": "rhythmUniformity",
+          "auroc": 0.9897557131599685,
+          "toeflFpr": 0.35294117647058826,
+          "accepted": false
+        },
+        {
+          "feature": "repeatedOpeningRate",
+          "auroc": 0.9925137903861309,
+          "toeflFpr": 0.29411764705882354,
+          "accepted": false
+        },
+        {
+          "feature": "strongTellsPer100",
+          "auroc": 0.9952718676122931,
+          "toeflFpr": 0.17647058823529413,
+          "accepted": true
+        },
+        {
+          "feature": "weakTellsPer100",
+          "auroc": 0.9944838455476753,
+          "toeflFpr": 0.23529411764705882,
+          "accepted": false
+        },
+        {
+          "feature": "rhythmUniformity",
+          "auroc": 0.991725768321513,
+          "toeflFpr": 0.23529411764705882,
+          "accepted": false
+        },
+        {
+          "feature": "repeatedOpeningRate",
+          "auroc": 0.9944838455476753,
+          "toeflFpr": 0.17647058823529413,
+          "accepted": false
+        },
+        {
+          "feature": "weakTellsPer100",
+          "auroc": 0.9952718676122931,
+          "toeflFpr": 0.17647058823529413,
+          "accepted": false
+        },
+        {
+          "feature": "rhythmUniformity",
+          "auroc": 0.991725768321513,
+          "toeflFpr": 0.23529411764705882,
+          "accepted": false
+        },
+        {
+          "feature": "repeatedOpeningRate",
+          "auroc": 0.9952718676122931,
+          "toeflFpr": 0.17647058823529413,
+          "accepted": false
+        }
+      ],
+      "quick": [
+        {
+          "feature": "strongTellsPer100",
+          "auroc": 0.5334909377462569,
+          "toeflFpr": 0,
+          "accepted": true
+        },
+        {
+          "feature": "weakTellsPer100",
+          "auroc": 0.4808904649330181,
+          "toeflFpr": 1,
+          "accepted": false
+        },
+        {
+          "feature": "vocabularyPer100",
+          "auroc": 0.7507880220646178,
+          "toeflFpr": 0.058823529411764705,
+          "accepted": true
+        },
+        {
+          "feature": "dashesPer100",
+          "auroc": 0.5029550827423168,
+          "toeflFpr": 0.058823529411764705,
+          "accepted": true
+        },
+        {
+          "feature": "rhythmUniformity",
+          "auroc": 0.8514578408195429,
+          "toeflFpr": 0.17647058823529413,
+          "accepted": true
+        },
+        {
+          "feature": "repeatedOpeningRate",
+          "auroc": 0.503940110323089,
+          "toeflFpr": 1,
+          "accepted": true
+        },
+        {
+          "feature": "strongTellsPer100",
+          "auroc": 0.8620961386918834,
+          "toeflFpr": 0.11764705882352941,
+          "accepted": true
+        },
+        {
+          "feature": "weakTellsPer100",
+          "auroc": 0.851063829787234,
+          "toeflFpr": 0.17647058823529413,
+          "accepted": false
+        },
+        {
+          "feature": "vocabularyPer100",
+          "auroc": 0.8766745468873128,
+          "toeflFpr": 0.11764705882352941,
+          "accepted": true
+        },
+        {
+          "feature": "dashesPer100",
+          "auroc": 0.8703703703703703,
+          "toeflFpr": 0.17647058823529413,
+          "accepted": true
+        },
+        {
+          "feature": "repeatedOpeningRate",
+          "auroc": 0.8494877856579984,
+          "toeflFpr": 0.17647058823529413,
+          "accepted": false
+        },
+        {
+          "feature": "strongTellsPer100",
+          "auroc": 0.8794326241134752,
+          "toeflFpr": 0.11764705882352941,
+          "accepted": true
+        },
+        {
+          "feature": "weakTellsPer100",
+          "auroc": 0.8774625689519306,
+          "toeflFpr": 0.11764705882352941,
+          "accepted": false
+        },
+        {
+          "feature": "dashesPer100",
+          "auroc": 0.8979511426319937,
+          "toeflFpr": 0.17647058823529413,
+          "accepted": false
+        },
+        {
+          "feature": "repeatedOpeningRate",
+          "auroc": 0.8770685579196218,
+          "toeflFpr": 0.11764705882352941,
+          "accepted": false
+        },
+        {
+          "feature": "weakTellsPer100",
+          "auroc": 0.876280535855004,
+          "toeflFpr": 0.11764705882352941,
+          "accepted": false
+        },
+        {
+          "feature": "dashesPer100",
+          "auroc": 0.8983451536643026,
+          "toeflFpr": 0.058823529411764705,
+          "accepted": true
+        },
+        {
+          "feature": "repeatedOpeningRate",
+          "auroc": 0.8774625689519306,
+          "toeflFpr": 0.11764705882352941,
+          "accepted": false
+        },
+        {
+          "feature": "weakTellsPer100",
+          "auroc": 0.8951930654058313,
+          "toeflFpr": 0.058823529411764705,
+          "accepted": false
+        },
+        {
+          "feature": "repeatedOpeningRate",
+          "auroc": 0.8983451536643026,
+          "toeflFpr": 0.058823529411764705,
+          "accepted": false
+        }
+      ]
+    }
+  }
+}

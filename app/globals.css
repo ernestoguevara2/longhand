@@ -1,0 +1,161 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-ui);
+  --font-serif: var(--font-reading);
+  --font-heading: var(--font-ui);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sheet: var(--sheet);
+  --color-marker-some: var(--marker-some);
+  --color-marker-strong: var(--marker-strong);
+  --color-pen-note: var(--pen-note);
+  --color-pen-flag: var(--pen-flag);
+  --color-pen-good: var(--pen-good);
+  --radius-sm: 3px;
+  --radius-md: 5px;
+  --radius-lg: 7px;
+  --radius-xl: 10px;
+}
+
+/* Blue-black fountain pen ink for the night desk; highlighter colors for the marks. */
+:root {
+  --background: #f3f4f7;
+  --foreground: #1b2440;
+  --sheet: #fbfbf8;
+  --card: #fbfbf8;
+  --card-foreground: #1b2440;
+  --popover: #fbfbf8;
+  --popover-foreground: #1b2440;
+  --primary: #1b2a5e;
+  --primary-foreground: #fbfbf8;
+  --secondary: #e4e7ef;
+  --secondary-foreground: #1b2440;
+  --muted: #e4e7ef;
+  --muted-foreground: #586184;
+  --accent: #e4e7ef;
+  --accent-foreground: #1b2440;
+  --destructive: #b3173f;
+  --border: #d3d7e3;
+  --input: #c6cbdb;
+  --ring: #3d57b8;
+  --marker-some: rgb(247 208 49 / 0.45);
+  --marker-strong: rgb(255 92 138 / 0.34);
+  --pen-note: #8a6500;
+  --pen-flag: #b3173f;
+  --pen-good: #0b7a57;
+}
+
+.dark {
+  --background: #111a33;
+  --foreground: #eae7dd;
+  --sheet: #17213f;
+  --card: #1c274a;
+  --card-foreground: #eae7dd;
+  --popover: #1c274a;
+  --popover-foreground: #eae7dd;
+  --primary: #f4cf4a;
+  --primary-foreground: #131c37;
+  --secondary: #26325c;
+  --secondary-foreground: #eae7dd;
+  --muted: #26325c;
+  --muted-foreground: #a3adc9;
+  --accent: #2c3966;
+  --accent-foreground: #eae7dd;
+  --destructive: #ff7c9c;
+  --border: #303c69;
+  --input: #3a4777;
+  --ring: #f4cf4a;
+  --marker-some: rgb(244 207 74 / 0.24);
+  --marker-strong: rgb(255 92 138 / 0.34);
+  --pen-note: #f4cf4a;
+  --pen-flag: #ff90ab;
+  --pen-good: #7fdcb6;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+  }
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Editor and its highlight layer must wrap identically, so they share one definition. */
+.reading-text {
+  font-family: var(--font-reading), Georgia, serif;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  letter-spacing: 0;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  word-break: normal;
+  tab-size: 4;
+}
+
+/* A highlighter stroke: slightly uneven edges, as if drawn by hand. */
+.mark-some,
+.mark-strong {
+  border-radius: 0.28em 0.12em 0.32em 0.1em / 0.2em 0.34em 0.14em 0.3em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  padding-block: 0.08em;
+  transition: background-color 120ms linear;
+}
+.mark-some {
+  background-color: var(--marker-some);
+}
+.mark-strong {
+  background-color: var(--marker-strong);
+}
+.mark-active {
+  text-decoration: underline;
+  text-decoration-color: var(--ring);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.22em;
+}
+
+.diff-added {
+  color: var(--pen-good);
+  background: color-mix(in srgb, var(--pen-good) 14%, transparent);
+  border-radius: 2px;
+}
+.diff-removed {
+  color: var(--pen-flag);
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+  background: color-mix(in srgb, var(--pen-flag) 12%, transparent);
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0ms !important;
+    animation-duration: 0ms !important;
+  }
+}

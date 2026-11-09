@@ -1,0 +1,158 @@
+{
+ "onnx-community/e5-small-lora-ai-generated-detector-ONNX": {
+  "size": "34MB",
+  "labels": [
+   "LABEL_0",
+   "LABEL_1"
+  ],
+  "loadSec": 0.2,
+  "msPerDoc": 28,
+  "auroc": {
+   "ai_raid_paraphrased": 0.938,
+   "ai_gemma_2026": 0.776,
+   "ai_gpt3_essay": 0.997,
+   "ai_gpt3_abstract": 0.936,
+   "ai_gpt3_prompted_literary": 0.888
+  },
+  "meanScore": {
+   "ai_raid_paraphrased": 0.915,
+   "human_hc3": 0.709,
+   "ai_gemma_2026": 0.816,
+   "human_toefl": 0.833,
+   "human_us_8th_grade": 0.574,
+   "human_college_essay": 0.473,
+   "human_cs224n_abstract": 0.726,
+   "ai_gpt3_essay": 0.954,
+   "ai_gpt3_abstract": 0.917,
+   "ai_gpt3_prompted_literary": 0.89
+  },
+  "flaggedAt50": {
+   "ai_raid_paraphrased": "100% of 30",
+   "human_hc3": "83% of 30",
+   "ai_gemma_2026": "100% of 16",
+   "human_toefl": "100% of 91",
+   "human_us_8th_grade": "60% of 88",
+   "human_college_essay": "41% of 70",
+   "human_cs224n_abstract": "90% of 60",
+   "ai_gpt3_essay": "100% of 31",
+   "ai_gpt3_abstract": "100% of 60",
+   "ai_gpt3_prompted_literary": "100% of 60"
+  },
+  "flaggedAt90": {
+   "ai_raid_paraphrased": "80% of 30",
+   "human_hc3": "7% of 30",
+   "ai_gemma_2026": "31% of 16",
+   "human_toefl": "25% of 91",
+   "human_us_8th_grade": "14% of 88",
+   "human_college_essay": "4% of 70",
+   "human_cs224n_abstract": "8% of 60",
+   "ai_gpt3_essay": "100% of 31",
+   "ai_gpt3_abstract": "80% of 60",
+   "ai_gpt3_prompted_literary": "55% of 60"
+  }
+ },
+ "onnx-community/tmr-ai-text-detector-ONNX": {
+  "size": "126MB",
+  "labels": [
+   "human",
+   "ai"
+  ],
+  "loadSec": 8.2,
+  "msPerDoc": 77,
+  "auroc": {
+   "ai_raid_paraphrased": 0.931,
+   "ai_gemma_2026": 0.974,
+   "ai_gpt3_essay": 1,
+   "ai_gpt3_abstract": 0.973,
+   "ai_gpt3_prompted_literary": 0.946
+  },
+  "meanScore": {
+   "ai_raid_paraphrased": 0.972,
+   "human_hc3": 0.654,
+   "ai_gemma_2026": 0.986,
+   "human_toefl": 0.848,
+   "human_us_8th_grade": 0.325,
+   "human_college_essay": 0.227,
+   "human_cs224n_abstract": 0.981,
+   "ai_gpt3_essay": 0.988,
+   "ai_gpt3_abstract": 0.986,
+   "ai_gpt3_prompted_literary": 0.983
+  },
+  "flaggedAt50": {
+   "ai_raid_paraphrased": "100% of 30",
+   "human_hc3": "63% of 30",
+   "ai_gemma_2026": "100% of 16",
+   "human_toefl": "87% of 91",
+   "human_us_8th_grade": "32% of 88",
+   "human_college_essay": "21% of 70",
+   "human_cs224n_abstract": "100% of 60",
+   "ai_gpt3_essay": "100% of 31",
+   "ai_gpt3_abstract": "100% of 60",
+   "ai_gpt3_prompted_literary": "100% of 60"
+  },
+  "flaggedAt90": {
+   "ai_raid_paraphrased": "97% of 30",
+   "human_hc3": "43% of 30",
+   "ai_gemma_2026": "100% of 16",
+   "human_toefl": "76% of 91",
+   "human_us_8th_grade": "17% of 88",
+   "human_college_essay": "14% of 70",
+   "human_cs224n_abstract": "100% of 60",
+   "ai_gpt3_essay": "100% of 31",
+   "ai_gpt3_abstract": "100% of 60",
+   "ai_gpt3_prompted_literary": "98% of 60"
+  }
+ },
+ "hbhanushali/fakespot-ai-detector-onnx": {
+  "size": "125MB",
+  "labels": [
+   "Human",
+   "AI"
+  ],
+  "loadSec": 7.9,
+  "msPerDoc": 82,
+  "auroc": {
+   "ai_raid_paraphrased": 0.959,
+   "ai_gemma_2026": 0.863,
+   "ai_gpt3_essay": 1,
+   "ai_gpt3_abstract": 0.989,
+   "ai_gpt3_prompted_literary": 0.944
+  },
+  "meanScore": {
+   "ai_raid_paraphrased": 0.986,
+   "human_hc3": 0.037,
+   "ai_gemma_2026": 0.881,
+   "human_toefl": 0.678,
+   "human_us_8th_grade": 0.006,
+   "human_college_essay": 0.333,
+   "human_cs224n_abstract": 0.993,
+   "ai_gpt3_essay": 1,
+   "ai_gpt3_abstract": 1,
+   "ai_gpt3_prompted_literary": 0.998
+  },
+  "flaggedAt50": {
+   "ai_raid_paraphrased": "100% of 30",
+   "human_hc3": "0% of 30",
+   "ai_gemma_2026": "94% of 16",
+   "human_toefl": "70% of 91",
+   "human_us_8th_grade": "0% of 88",
+   "human_college_essay": "30% of 70",
+   "human_cs224n_abstract": "100% of 60",
+   "ai_gpt3_essay": "100% of 31",
+   "ai_gpt3_abstract": "100% of 60",
+   "ai_gpt3_prompted_literary": "100% of 60"
+  },
+  "flaggedAt90": {
+   "ai_raid_paraphrased": "97% of 30",
+   "human_hc3": "0% of 30",
+   "ai_gemma_2026": "81% of 16",
+   "human_toefl": "46% of 91",
+   "human_us_8th_grade": "0% of 88",
+   "human_college_essay": "20% of 70",
+   "human_cs224n_abstract": "100% of 60",
+   "ai_gpt3_essay": "100% of 31",
+   "ai_gpt3_abstract": "100% of 60",
+   "ai_gpt3_prompted_literary": "100% of 60"
+  }
+ }
+}
